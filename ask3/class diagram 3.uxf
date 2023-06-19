@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>30</y>
+      <w>220</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>"Interface"
+DocumentElement
+
+--
+
+
+--
+
+
++ setFontSize(size:Integer) {void}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>30</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Document
+
+--
+- name : String
+- elements : DocumentElement {Set}
+
+--
+
++ setName(name:String)
++ getName()
++ addElement(Element:DocumentElement)
++ changeFontSize(size:Integer) {void}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>420</y>
+      <w>320</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>DocumentElementBase
+
+--
+
+- fontsize : Integer
+
+--
+
+# changeFontSize(size : Integer) {abstract} {void}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>280</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>
+Table
+
+--
+
++ rows : Integer
++ columns : Integer
+
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>530</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>
+Paragraph
+
+--
+
++ text : String
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>120</y>
+      <w>450</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>210</y>
+      <w>30</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>370</y>
+      <w>350</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>500</y>
+      <w>350</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>
